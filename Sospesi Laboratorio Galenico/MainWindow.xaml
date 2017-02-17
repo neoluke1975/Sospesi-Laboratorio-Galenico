@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sospesi_Laboratorio_Galenico"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Sospesi Laboratorio Galenico" Height="768" Width="1024" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="Babasse-Imod-Lab.ico" Stretch="Uniform" TileMode="Tile" Opacity="0.31"/>
+        </Grid.Background>
+        <GroupBox BorderBrush="Blue" BorderThickness="2" Header="Dati Sospeso" FontSize="20" HorizontalAlignment="Left" Height="568" Margin="34,104,0,0" VerticalAlignment="Top" Width="764"/>
+        <GroupBox Header="" TabIndex="1" Focusable="True" BorderBrush="Blue" BorderThickness="2" HorizontalAlignment="Left" Height="89" Margin="34,10,0,0" VerticalAlignment="Top" Width="402" Background="AliceBlue"/>
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Left" Margin="34,33,0,0" TextWrapping="Wrap" Text="Sospeso N°" VerticalAlignment="Top" Height="47" Width="192" FontFamily="Verdana" FontSize="20" />
+        <TextBox BorderBrush="Blue" BorderThickness="2" TextAlignment="Center" HorizontalAlignment="Left" Height="57" Margin="198,30,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" FontSize="20" KeyDown="TextBox_KeyDown"/>
+        <Button Content="Parametri" BorderBrush="Blue" BorderThickness="2" FontSize="20"  HorizontalAlignment="Left" Margin="841,30,0,0" VerticalAlignment="Top" Width="152" Height="57"/>
+        <TextBox x:Name="tbxCliente" HorizontalAlignment="Left" Height="38" Margin="181,187,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="584" FontSize="20" TextAlignment="Center"/>
+        <TextBox x:Name="tbxMedico" HorizontalAlignment="Left" Height="38" Margin="181,244,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="584" FontSize="20" TextAlignment="Center" />
+        <Label Content="Cliente" HorizontalAlignment="Left" Margin="59,187,0,0" VerticalAlignment="Top" Height="34" Width="104" FontSize="20"/>
+        <Label Content="Medico" HorizontalAlignment="Left" Margin="59,244,0,0" VerticalAlignment="Top" Width="104" Height="34" FontSize="20"/>
+        <TextBox x:Name="tbxNote" HorizontalAlignment="Left" Height="38" Margin="181,299,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="584" FontSize="20" TextAlignment="Center" />
+        <Label Content="Note" HorizontalAlignment="Left" Margin="59,299,0,0" VerticalAlignment="Top" Width="104" Height="34" FontSize="20"/>
+        <Label Content="PREZZO" HorizontalAlignment="Left" Margin="367,377,0,0" VerticalAlignment="Top" Width="202" FontSize="50" FontWeight="Bold"/>
+        <TextBox TextAlignment="Center" HorizontalAlignment="Left" Height="72" Margin="272,459,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="393"/>
+        <Button Content="SALVA" HorizontalAlignment="Left" Margin="382,575,0,0" VerticalAlignment="Top" Width="168" Height="74" FontSize="40" BorderBrush="Blue" BorderThickness="2"/>
     </Grid>
 </Window>
